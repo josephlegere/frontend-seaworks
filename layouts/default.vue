@@ -26,6 +26,7 @@
 		<v-app-bar
 			fixed
 			app
+			dense
 		>
 			<v-app-bar-nav-icon @click.stop="drawer = !drawer" />
 			<v-toolbar-title v-text="title" />
@@ -37,10 +38,11 @@
 				group
 				:dense="$vuetify.breakpoint.smAndDown"
 			>
-				<v-btn value="home">Home</v-btn>
-				<v-btn value="service">Service</v-btn>
-				<v-btn value="about">About</v-btn>
-				<v-btn value="contact">Contact</v-btn>
+				<v-btn
+					v-for="(item, i) in items"
+					:key="i"
+					:value="item.title"
+				>{{ item.title }}</v-btn>
 			</v-btn-toggle>
 		</v-app-bar>
 		<v-main>
@@ -65,13 +67,23 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Home',
           to: '/'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'Service',
+          to: '#service'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'About',
+          to: '#about'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Contact',
+          to: '#contact'
         }
       ],
       title: 'Seaworks'
