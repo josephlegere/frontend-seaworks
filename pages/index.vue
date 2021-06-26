@@ -1,5 +1,5 @@
 <template>
-	<v-row no-gutters justify="center" align="center">
+	<v-row no-gutters align="center">
 		<v-col cols="12">
 			<v-card>
 				<video autoplay muted loop id="myVideo" width="100%" height="100%">
@@ -62,7 +62,7 @@
 			</v-card>
 		</v-col>
 
-		<v-col cols="12" md="5" class="my-6">
+		<v-col cols="12" md="6" class="my-6" offset-md="3">
 			<v-card flat tile>
 				<v-card-title class="headline">
 					Contact Us
@@ -105,6 +105,98 @@
 						Submit
 					</v-btn>
 				</v-card-actions>
+			</v-card>
+		</v-col>
+
+		<v-col cols="12" md="6" class="my-6 px-2" offset-md="3">
+			<v-card flat tile>
+					<v-row no-gutters>
+						<v-col cols="12">
+							<v-list>
+								<v-list-item-title class="text-h5">Working Hours</v-list-item-title>
+								<v-list-item-content>
+									<v-row
+										align="center"
+										justify="start"
+										class="mt-1"
+									>
+										<v-icon class="ml-3 mr-1">
+											mdi-calendar
+										</v-icon>
+										<span class="subheading">Sunday - Thursday, 7:00 AM - 5:00 PM</span>
+									</v-row>
+								</v-list-item-content>
+							</v-list>
+						</v-col>
+						<v-col cols="12">
+							<v-list>
+								<v-list-item-title class="text-h5">Contact Us</v-list-item-title>
+								<v-list-item-content>
+									Your feedback is important to Seaworks. Share with us your comments, compliments and feedback to help us improve our services.
+								</v-list-item-content>
+
+								<v-list-item-content>
+									<v-row
+										align="center"
+										justify="start"
+										class="mt-1"
+									>
+										<v-icon class="ml-3 mr-1">
+											mdi-map-marker
+										</v-icon>
+										<span class="subheading">Seaworks Co, Building No 36, Street No 913,<br> Next to Spanish Embassy, P.O Box 23631.</span>
+									</v-row>
+								</v-list-item-content>
+								<v-list-item-content>
+									<v-row
+										align="center"
+										justify="start"
+										class="mt-1"
+									>
+										<v-icon class="ml-3 mr-1">
+											mdi-phone
+										</v-icon>
+										<span class="subheading">Tel: (+974) 4411 0455</span>
+									</v-row>
+								</v-list-item-content>
+								<v-list-item-content>
+									<v-row
+										align="center"
+										justify="start"
+										class="mt-1"
+									>
+										<v-icon class="ml-3 mr-1">
+											mdi-fax
+										</v-icon>
+										<span class="subheading">Fax: (+974) 4411 0921</span>
+									</v-row>
+								</v-list-item-content>
+								<v-list-item-content>
+									<v-row
+										align="center"
+										justify="start"
+										class="mt-1"
+									>
+										<v-icon class="ml-3 mr-1">
+											mdi-email
+										</v-icon>
+										<span class="subheading">info@seaworks.net</span>
+									</v-row>
+								</v-list-item-content>
+								<v-list-item-content><v-row
+										align="center"
+										justify="start"
+										class="mt-1"
+									>
+										<v-icon class="ml-3 mr-1">
+											mdi-web
+										</v-icon>
+										<span class="subheading">www.seaworks.net</span>
+									</v-row>
+								</v-list-item-content>
+							</v-list>
+						</v-col>
+					</v-row>
 			</v-card>
 		</v-col>
 	</v-row>
