@@ -1,11 +1,11 @@
 <template>
 	<v-row no-gutters align="center">
-		<v-col cols="12">
-			<v-card>
-				<video autoplay muted loop id="myVideo" width="100%" height="100%">
+		<v-col cols="12" id="home">
+			<v-card :height="$vuetify.breakpoint.smAndDown?'auto':'90vh'">
+				<video autoplay muted loop id="myVideo" width="100%">
 					<source src="https://video.wixstatic.com/video/b69375_74e256e6b7cf42f29b9b6fe396b7689d/1080p/mp4/file.mp4" type="video/mp4">
 				</video>
-				<div class="custom-card-title text-right text-h6 text-md-h3">
+				<div class="custom-card-title text-right text-h6 text-md-h3 mb-md-6">
 					<strong>TRUSTED PARTNER<br>IN MARINE CONSTRUCTIONS</strong>
 				</div>
 				<div class="custom-card-text">
@@ -23,7 +23,7 @@
 			</v-card>
 		</v-col>
 
-		<v-col cols="12">
+		<v-col cols="12" id="service">
 			<v-card class="text-center" tile>
 				<div class="text-h6 text-md-h4 font-weight-medium custom-header py-3">Our Services</div>
 			</v-card>
@@ -42,7 +42,7 @@
 			<v-parallax src="http://localhost:3000/blue-bg.jpg" height="200"></v-parallax>
 		</v-col>
 
-		<v-col cols="12">
+		<v-col cols="12" id="about">
 			<v-card>
 				<v-row no-gutters>
 					<v-col cols="12" md="6">
@@ -62,7 +62,7 @@
 			</v-card>
 		</v-col>
 
-		<v-col cols="12" md="6" class="my-6" offset-md="3">
+		<v-col cols="12" md="6" class="my-6" offset-md="3" id="contact">
 			<v-card flat tile>
 				<v-card-title class="headline">
 					Contact Us
